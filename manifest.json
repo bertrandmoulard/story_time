@@ -1,0 +1,15 @@
+{
+  "name": "Story Time",
+  "version": "0.1",
+  "permissions": [
+    "https://www.pivotaltracker.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.pivotaltracker.com/*"],
+      "js": ["jquery.js", "story_time.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
