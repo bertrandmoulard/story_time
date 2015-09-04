@@ -78,15 +78,6 @@ var StoryTime = function() {
       days = days - 1;
       weekDay = weekDay - 1;
     }
-    if(weekDay == 7) {
-      if(days > 1) {
-        days = days - 2;
-      }
-      else {
-        days = days - 1;
-      }
-      weekDay = weekDay - 2;
-    }
     if(weekDay >= days) {
       return days;
     }

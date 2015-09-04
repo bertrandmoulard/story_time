@@ -159,7 +159,7 @@ describe("StoryTime", function() {
     describe("when it's a Sunday", function() {
 
       beforeEach(function() {
-        spyOn(Date.prototype, 'getDay').andReturn(7);
+        spyOn(Date.prototype, 'getDay').andReturn(0);
       });
 
       var cases = [
