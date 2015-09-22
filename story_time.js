@@ -98,7 +98,7 @@ var StoryTime = function() {
     _this.token = localStorage.getItem("api_token");
     if(!_this.token || _this.token == "null") {
       _this.token = prompt("Please enter your Pivotal Tracker API token");
-      localStorage.setItem("api_token", token);
+      localStorage.setItem("api_token", _this.token);
     }
 
     if(_this.token && _this.token != "null") {
