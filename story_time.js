@@ -8,7 +8,6 @@ var StoryTime = function() {
   var fetchStories = function() {
     var filters = '/stories?filter=state:started';
     startTimer();
-    console.log(_this.token);
     $.ajax({
       url: baseUrl + '/projects/' + extractProjectId() + filters,
       beforeSend: function(xhr) {
@@ -29,7 +28,6 @@ var StoryTime = function() {
   };
 
   var fetchStoriesHistory = function(data) {
-    console.log("fetching stories history");
     for (var i=0; i < data.length;i++) {
       fetchStoryHistory(data[i].id);
     }
