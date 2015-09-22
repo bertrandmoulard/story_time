@@ -1,6 +1,6 @@
 {
   "name": "Story Time",
-  "version": "0.3",
+  "version": "0.4",
   "permissions": [
     "https://www.pivotaltracker.com/n/projects/*"
   ],
