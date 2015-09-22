@@ -3,7 +3,7 @@ var StoryTime = function() {
   var _this = this;
 
   var baseUrl = 'https://www.pivotaltracker.com/services/v5';
-  var indicatorCharacter = "✔︎";
+  var indicatorCharacter = "☀︎";
 
   var fetchStories = function() {
     var filters = '/stories?filter=state:started';
